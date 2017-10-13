@@ -1,0 +1,10 @@
+C:\Users\Brandon Lehr\Documents\LOWN\obj\Debug\netcoreapp2.0\LOWN.csproj.CoreCompileInputs.cache
+C:\Users\Brandon Lehr\Documents\LOWN\obj\Debug\netcoreapp2.0\LOWN.AssemblyInfoInputs.cache
+C:\Users\Brandon Lehr\Documents\LOWN\obj\Debug\netcoreapp2.0\LOWN.AssemblyInfo.cs
+C:\Users\Brandon Lehr\Documents\LOWN\bin\Debug\netcoreapp2.0\LOWN.deps.json
+C:\Users\Brandon Lehr\Documents\LOWN\bin\Debug\netcoreapp2.0\LOWN.runtimeconfig.json
+C:\Users\Brandon Lehr\Documents\LOWN\bin\Debug\netcoreapp2.0\LOWN.runtimeconfig.dev.json
+C:\Users\Brandon Lehr\Documents\LOWN\bin\Debug\netcoreapp2.0\LOWN.dll
+C:\Users\Brandon Lehr\Documents\LOWN\bin\Debug\netcoreapp2.0\LOWN.pdb
+C:\Users\Brandon Lehr\Documents\LOWN\obj\Debug\netcoreapp2.0\LOWN.dll
+C:\Users\Brandon Lehr\Documents\LOWN\obj\Debug\netcoreapp2.0\LOWN.pdb

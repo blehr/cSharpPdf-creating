@@ -1,0 +1,38 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.0",
+    "signature": "09159ebeb2b47ef603fbeb21db94700861929582"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.0": {
+      "LOWN/1.0.0": {
+        "dependencies": {
+          "iTextSharp": "5.5.12"
+        },
+        "runtime": {
+          "LOWN.dll": {}
+        }
+      },
+      "iTextSharp/5.5.12": {
+        "runtime": {
+          "lib/itextsharp.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "LOWN/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "iTextSharp/5.5.12": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-11kZ6NWkChRUbMXIkBIXvlPVaf6gvE8xzrvg04AcRGWOeS4eg6LUAg7L03i1cwYlOE7sgv32uQ61qy3i3UPzkQ==",
+      "path": "itextsharp/5.5.12",
+      "hashPath": "itextsharp.5.5.12.nupkg.sha512"
+    }
+  }
+}
