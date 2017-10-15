@@ -14,7 +14,8 @@ namespace LOWN
         public const string DEST = "../../Documents/Testing_Itext7.pdf";
         static void Main(string[] args)
         {
-            var pdf = new PDF();
+            var luke = new Person("Luke", "Skywalker", "07/07/1977", "Male", "(740) 565 - 1987");
+            var pdf = new PDF(luke);
             pdf.CreatePdf(DEST);
         }
 
