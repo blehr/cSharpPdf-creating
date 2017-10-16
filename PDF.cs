@@ -21,6 +21,7 @@ namespace LOWN
             cell.PaddingTop = 10;
             return cell;
         }
+
         public virtual void CreatePdf(string dest)
         {
             var titleFont = FontFactory.GetFont("Arial", 12, Font.BOLD);
@@ -42,11 +43,13 @@ namespace LOWN
             table.AddCell(title);
 
             PdfPCell description = new PdfPCell(new Phrase("Instructions: The Workers’ Compensation insurance carrier handling the below injury is requesting a summary of medical necessity from the treating physician describing how medication is related to the injury. Please note that failure to respond to this request may result in the denial of coverage for the medication.  You may attach any additional documentation that is important for the review, e.g. chart notes or lab data, to support this request.", bodyFont));
+            description.PaddingBottom = 5;
             description.Colspan = 6;
             table.AddCell(description);
 
             PdfPCell patientInfo = new PdfPCell(new Phrase("Patient Information", sectionHeaderFont));
             patientInfo.Colspan = 6;
+            patientInfo.PaddingBottom = 10;
             patientInfo.BackgroundColor = new BaseColor(0, 0, 0);
             table.AddCell(patientInfo);
 
@@ -57,11 +60,10 @@ namespace LOWN
             table.AddCell(dateOfBirth);
 
 
-            var checked_image = Image.GetInstance(@"C:/Users/Brandon Lehr/Documents/LOWN/images/icons8-Checked Checkbox-50.png");
-            checked_image.ScaleToFit(8, 8);
-            var unChecked_image = Image.GetInstance(@"C:/Users/Brandon Lehr/Documents/LOWN/images/icons8-Unchecked Checkbox-50.png");
-            unChecked_image.ScaleToFit(8, 8);
-
+            // var checked_image = Image.GetInstance(@"C:/Users/Brandon Lehr/Documents/LOWN/images/icons8-Checked Checkbox-50.png");
+            // checked_image.ScaleToFit(8, 8);
+            // var unChecked_image = Image.GetInstance(@"C:/Users/Brandon Lehr/Documents/LOWN/images/icons8-Unchecked Checkbox-50.png");
+            // unChecked_image.ScaleToFit(8, 8);
 
             var gender = CreateCustomCell(2, bodyFont, $"Male or Female: {Person.Gender}");
 
@@ -96,6 +98,7 @@ namespace LOWN
 
             PdfPCell workersCompClaim = new PdfPCell(new Phrase("Worker’s Compensation Claim Information", sectionHeaderFont));
             workersCompClaim.Colspan = 6;
+            workersCompClaim.PaddingBottom = 10;
             workersCompClaim.BackgroundColor = new BaseColor(0, 0, 0);
             table.AddCell(workersCompClaim);
 
@@ -118,6 +121,7 @@ namespace LOWN
 
             PdfPCell providerInfo = new PdfPCell(new Phrase("Provider Information", sectionHeaderFont));
             providerInfo.Colspan = 6;
+            providerInfo.PaddingBottom = 10;
             providerInfo.BackgroundColor = new BaseColor(0, 0, 0);
             table.AddCell(providerInfo);
 
@@ -137,6 +141,7 @@ namespace LOWN
 
             PdfPCell medInfo = new PdfPCell(new Phrase("Medication Information", sectionHeaderFont));
             medInfo.Colspan = 6;
+            medInfo.PaddingBottom = 10;
             medInfo.BackgroundColor = new BaseColor(0, 0, 0);
             table.AddCell(medInfo);
 
@@ -185,6 +190,7 @@ namespace LOWN
 
             PdfPCell divider = new PdfPCell(new Phrase("Signature", sectionHeaderFont));
             divider.Colspan = 6;
+            divider.PaddingBottom = 10;
             divider.BackgroundColor = new BaseColor(0, 0, 0);
             table.AddCell(divider);
 
